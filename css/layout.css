@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.inner {
+    background: pink;
+    max-width: 1280px;
+    /* width: 1280px; 로 하면 줄일 때
+    내부 컨텐츠 비율이 무너진다.*/
+    margin: 0 auto;
+}
+.header {
+    /* height: ; */
+}
+.footer {
+    /* height: ; */
+}
