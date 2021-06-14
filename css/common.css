@@ -21,7 +21,7 @@ body {
     display: block;
     clear: both;
 }
-.flexbox-center {
+.flexbox {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -74,19 +74,34 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 /* what section */
-.what {}
-.what__title {}
-.what__content {}
+.what {
+    margin-top: 100px;
+}
+.what__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.what__content {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.what__text {
+    border: 1px solid #000;
+    margin-top: -5%;
+    min-width: 410px;
+    /* 반응형 width로 할지 고민 */
+}
+.what__icon {
+    /* img 목업으로 교체 후 넣을 것 */
+    border: 1px solid #000;
+    width: 400px;
+    height: 300px;
+}
 .what__text {}
 .what__point {
     color: var(--primary-color);
@@ -94,6 +109,15 @@
 .what__icon {}
 
 /* recent section */
+.recent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.recent__title {
+    
+}
 .recent__item {
     width: 300px;
     height: 300px;
