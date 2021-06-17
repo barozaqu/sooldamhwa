@@ -2,9 +2,14 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<script src="./js/jquery-2.2.4.min.js"></script>
+<!-- multi slider js -->
+<script src="./js/multislider.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="./css/responsive.css">
+<!-- Font Awesome -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <title>술담화</title>
 </head>
 <body>
@@ -54,7 +59,7 @@
             </div>
         </div>
     </section>
-    <section class="what">
+    <section class="what flexbox">
         <div class="inner">
             <div class="what__title">
                 <img src="./image/title/what.png" alt="담화박스란">
@@ -65,28 +70,137 @@
                     <p>1,200군데가 넘는 전국 각지의 양조장에서 생산되는<br>다양한 우리나라 전통주를 <span class="what__point">매달 새로운 구성</span>으로 담아<br>원하는 곳에서 편하게 만나 보실 수 있도록 <span class="what__point">배송</span>해드리는<br><h3><span class="what__point">전통주 월 구독 서비스</span></h3>입니다.</p>
                 </div>
                 <div class="what__icon">
+                    padding 2%
+                    magin ?
                 </div>
             </div>
         </div>
-
+        
     </section>
-    <section class="recent">
+    <section class="recent flexbox">
         <div class="inner">
             <div class="recent__title">
                 <img src="./image/title/recent.png" alt="구독자 최근 담화">
-                <div class="recent__wrap">
-                    <div class="recent__content">
+            </div>
+            <div class="recent__wrap flexbox" id="slider">
+                <div class="MS-controls">
+                    <button class="MS-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                </div>
+                <div class="MS-content">
+                    <div class="item">
                         <div>
-                            <div class="recent__item">
+                            <div class="recent__desc">
                                 <div class="recent__txt">
                                     <h3>drinker101</h3>
                                     <p>전통구 구독 서비스라는게 있다길래<br>지체 없이 바로 신청했고 드디어<br>도착했는데 두근두근 설렙니다.</p>
                                 </div>
+                                </div>
+                                <img class="recent__img" src="./image/recent/review1.jpg" alt="최근 담화 사진1">
                             </div>
-                            <img class="recent__img" src="./image/recent/review1.jpg" alt="최근 담화 사진1">
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="recent__desc">
+                                    <div class="recent__txt">
+                                        <h3>drinker101</h3>
+                                        <p>전통구 구독 서비스라는게 있다길래<br>지체 없이 바로 신청했고 드디어<br>도착했는데 두근두근 설렙니다.</p>
+                                    </div>
+                                </div>
+                                <img class="recent__img" src="./image/recent/review1.jpg" alt="최근 담화 사진1">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="recent__desc">
+                                    <div class="recent__txt">
+                                        <h3>drinker101</h3>
+                                        <p>전통구 구독 서비스라는게 있다길래<br>지체 없이 바로 신청했고 드디어<br>도착했는데 두근두근 설렙니다.</p>
+                                    </div>
+                                </div>
+                                <img class="recent__img" src="./image/recent/review1.jpg" alt="최근 담화 사진1">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="recent__desc">
+                                    <div class="recent__txt">
+                                        <h3>drinker101</h3>
+                                        <p>전통구 구독 서비스라는게 있다길래<br>지체 없이 바로 신청했고 드디어<br>도착했는데 두근두근 설렙니다.</p>
+                                    </div>
+                                </div>
+                                <img class="recent__img" src="./image/recent/review1.jpg" alt="최근 담화 사진1">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="recent__desc">
+                                    <div class="recent__txt">
+                                        <h3>drinker101</h3>
+                                        <p>전통구 구독 서비스라는게 있다길래<br>지체 없이 바로 신청했고 드디어<br>도착했는데 두근두근 설렙니다.</p>
+                                    </div>
+                                </div>
+                                <img class="recent__img" src="./image/recent/review1.jpg" alt="최근 담화 사진1">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="recent__desc">
+                                    <div class="recent__txt">
+                                        <h3>drinker101</h3>
+                                        <p>전통구 구독 서비스라는게 있다길래<br>지체 없이 바로 신청했고 드디어<br>도착했는데 두근두근 설렙니다.</p>
+                                    </div>
+                                </div>
+                                <img class="recent__img" src="./image/recent/review1.jpg" alt="최근 담화 사진1">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="recent__desc">
+                                    <div class="recent__txt">
+                                        <h3>drinker101</h3>
+                                        <p>전통구 구독 서비스라는게 있다길래<br>지체 없이 바로 신청했고 드디어<br>도착했는데 두근두근 설렙니다.</p>
+                                    </div>
+                                </div>
+                                <img class="recent__img" src="./image/recent/review1.jpg" alt="최근 담화 사진1">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="recent__desc">
+                                    <div class="recent__txt">
+                                        <h3>drinker101</h3>
+                                        <p>전통구 구독 서비스라는게 있다길래<br>지체 없이 바로 신청했고 드디어<br>도착했는데 두근두근 설렙니다.</p>
+                                    </div>
+                                </div>
+                                <img class="recent__img" src="./image/recent/review1.jpg" alt="최근 담화 사진1">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="recent__desc">
+                                    <div class="recent__txt">
+                                        <h3>drinker101</h3>
+                                        <p>전통구 구독 서비스라는게 있다길래<br>지체 없이 바로 신청했고 드디어<br>도착했는데 두근두근 설렙니다.</p>
+                                    </div>
+                                </div>
+                                <img class="recent__img" src="./image/recent/review1.jpg" alt="최근 담화 사진1">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="recent__desc">
+                                    <div class="recent__txt">
+                                        <h3>drinker101</h3>
+                                        <p>전통구 구독 서비스라는게 있다길래<br>지체 없이 바로 신청했고 드디어<br>도착했는데 두근두근 설렙니다.</p>
+                                    </div>
+                                </div>
+                                <img class="recent__img" src="./image/recent/review1.jpg" alt="최근 담화 사진1">
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="MS-controls">
+                        <button class="MS-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
             </div>
         </div>
     </section>
@@ -96,35 +210,33 @@
                 <img src="./image/title/curious.png" alt="알고 싶은 뒷담화">
                 <div class="curious__content">
                     <div class="curious__tab">
-                        <div class="curious__tab--menu">
-                            <a href="#">전통주란?</a>
-                            <a href="#">배송비는?</a>
-                            <a href="#">결제는?</a>
-                            <a href="#">쉬어가기?</a>
+                        <div class="curious__tab--menu flexbox">
+                            <a class="flexbox" href="#"><h2>전통주란?</h2></a>
+                            <a class="flexbox" href="#"><h2>배송비는?</h2></a>
+                            <a class="flexbox" href="#"><h2>결제는?</h2></a>
+                            <a class="flexbox" href="#"><h2>쉬어가기?</h2></a>
                         </div>
-                        <div class="curious__tab--desc">
-                            <h1>tab1</h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
-                        </div>
-                            <h1>tab2</h1>
+                        <div class="desc__wrap">
                             <div class="curious__tab--desc">
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
                             </div>
-                            <h1>tab3</h1>
+                                <div class="curious__tab--desc">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
+                                </div>
+                                <div class="curious__tab--desc">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
+                                </div>
                             <div class="curious__tab--desc">
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
                             </div>
-                            <h1>tab4</h1>
-                        <div class="curious__tab--desc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt numquam iste architecto tempora doloribus molestias sequi a rem possimus. Iure reiciendis labore fuga nostrum ut ratione possimus, hic debitis temporibus.</p>
                         </div>
                         
                     </div>
@@ -201,5 +313,20 @@
         </div>
 
     </footer>
+
+    <!-- Include jQuery -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+    <!-- Include Multislider -->
+    <script src="js/multislider.min.js"></script>
+
+    <!-- Initialize element with Multislider -->
+    <script>
+    $('#slider').multislider({
+        interval: 4000,
+        slideAll: true,
+        duration: 1500
+    });
+    </script>
 </body>
 </html>

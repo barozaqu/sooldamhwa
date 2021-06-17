@@ -1,29 +1,32 @@
 @charset "utf-8";
 
 :root {
-    font-size: 62.5%; /* 10px */
-    --primary-color: #ef5521;
-    --secondary-color: #efe4d1;
-    --title-color: ;
-    --text-color: ;
+  font-size: 62.5%; /* 10px */
+  --primary-color: #ef5521;
+  --secondary-color: #efe4d1;
+  --title-color: ;
+  --text-color: ;
 
-    /* typography */
-    --font-menu: 2rem; /* 20px */
-    --font-regular: 1.6rem; /* 16px */
-    --font-large: 3.2rem; /* 32px */
+  /* typography */
+  --font-menu: 2rem; /* 20px */
+  --font-regular: 1.6rem; /* 16px */
+  --font-large: 3.2rem; /* 32px */
+
+  /* margin / padding */
+  /* --title-margin:  */
+  --padding-title: 2rem 0;
 }
 body {
-    /* font-family: 1; */
-    font-size: var(--font-regular);
+  /* font-family: 1; */
+  font-size: var(--font-regular);
 }
 .clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 .flexbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-

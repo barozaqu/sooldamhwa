@@ -5,135 +5,190 @@
 
 /* header */
 .header__nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 .header__nav--front {
-    /* display: flex; */
-    /* justify-content: flex-start; */
-    /* item이 하나라서 flex 줄 필요 없고 
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  /* item이 하나라서 flex 줄 필요 없고 
     space-between 때문에 맨 앞으로 와 있다 */
 }
 .header__nav--end {
-    display: flex;
-    /* item 넘치면 흐른다 */
-    /* justify-content: flex-end; */
+  display: flex;
+  /* item 넘치면 흐른다 */
+  /* justify-content: flex-end; */
 }
 .header__item {
-    width: 100px;
-    height: 60px;
-    /* 원래 포토샾 200/120px 반 사이즈? */
-    text-align: center;
-    line-height: 60px;
-    font-weight: bold;
-    /* 폰트 수정할 것 */
-    background: gold;
-    border: 1px solid #000;
+  width: 100px;
+  height: 60px;
+  /* 원래 포토샾 200/120px 반 사이즈? */
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  /* 폰트 수정할 것 */
+  background: gold;
+  border: 1px solid #000;
 }
 .header__logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }
 .header__logo > a img {
-    position: absolute;
-    border: 1px solid #000;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%); 
-    /* 로고를 박스 내에 vertical 가운데 정렬 */
+  position: absolute;
+  border: 1px solid #000;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  /* 로고를 박스 내에 vertical 가운데 정렬 */
 }
 /* mainbanner section */
+.mainbanner {
+  margin-bottom: 100px;
+}
 .mainbanner__img {
-    position: relative;
-    display: flex;
+  position: relative;
+  display: flex;
 }
 .mainbanner__img > img {
-    min-width: 670px;
-    /* 모바일 사이즈 480px? */
+  min-width: 670px;
+  /* 모바일 사이즈 480px? */
 }
 .mainbanner__content {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .mainbanner__text {
-    display: flex;
-    flex-direction: column;
-    color: #fff;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
 }
 .mainbanner__icon {
-    max-width: 200px;
+  max-width: 200px;
 }
-
 
 /* what section */
 .what {
-    margin-top: 100px;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 .what__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
+  padding: var(--padding-title);
 }
 .what__content {
-    border: 1px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .what__text {
-    border: 1px solid #000;
-    margin-top: -5%;
-    min-width: 410px;
-    /* 반응형 width로 할지 고민 */
+  border: 1px solid #000;
+  min-width: 410px;
+  margin-top: -5%;
+  font-size: 1.4rem;
+  padding: 2%;
+  /* 반응형 width로 할지 고민 */
 }
 .what__icon {
-    /* img 목업으로 교체 후 넣을 것 */
-    border: 1px solid #000;
-    width: 400px;
-    height: 300px;
+  /* img 목업으로 교체 후 넣을 것 */
+  border: 1px solid #000;
+  width: 400px;
+  height: 300px;
+  padding: 2%;
 }
-.what__text {}
+.what__text {
+}
 .what__point {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
-.what__icon {}
+.what__icon {
+}
 
 /* recent section */
+
+/* muliti slider */
+#slider {
+  position: relative;
+}
+#slider .MS-content {
+  overflow: hidden;
+  white-space: nowrap;
+}
+#slider .MS-content .item {
+  font-size: 0;
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  border-right: none;
+  width: 25%;
+  border: 1px solid #000;
+}
+#slider .MS-content .item > div {
+  margin: 5px;
+}
+
+.MS-controls {
+  height: 100px;
+  /* border: 1px solid #000; */
+  width: 100px;
+}
+
+.MS-left,
+.MS-right {
+  font-size: 4rem;
+}
 .recent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
+  margin-bottom: 20px;
 }
 .recent__title {
-    
+  padding: 20px 0;
+  margin-bottom: 10px;
 }
-.recent__item {
-    width: 300px;
-    height: 300px;
-    text-align: center;
-    border: 1px solid #000;
-    border-radius: 50%;
-    margin-bottom: 10px;
+.recent__desc {
+  width: 290px;
+  height: 290px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-bottom: 5px;
 }
 .recent__txt {
-    margin-top: 100px;
+  margin-top: 100px;
+}
+.recent__txt h3 {
+  font-size: 2rem;
+}
+.recent__txt p {
+  font-size: 1.6rem;
 }
 .recent__img {
-    height: 300px;
-    width: 300px;
+  height: 300px;
+  width: 300px;
+}
+.recent__wrap {
 }
 
+.recent__content {
+}
 
+/* curious section */
+.curious__title {
+}
+
+.curious__tab--menu a {
+  border: 1px solid #000;
+  width: 150px;
+  height: 50px;
+}
 
 /* footer */
